@@ -1,0 +1,573 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;   
+}
+
+::-webkit-scrollbar{
+    width: 15px !important;
+}
+::-webkit-scrollbar-track{
+    background: #eaebec !important;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(255,92,92);
+    background: linear-gradient(0deg, rgba(255,92,92,1) 0%, rgba(101,18,18,1) 100%);
+    border-radius: 10px;
+}
+/* ********************************
+            HERO SEC CSS
+******************************** */
+#hero-icn{
+    display: block;
+    margin: auto 0 auto auto;
+}
+/* ********************************
+            END
+******************************** */
+
+/* ********************************
+            NAVBAR CSS
+******************************** */
+
+.navbar{
+    position: sticky !important;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+.navbar-nav{
+    display: flex !important;
+    font-weight: 500;
+    margin: auto 0 auto auto !important;
+}
+.navbar-nav .btn{
+    color: white;
+    font-weight: 500;
+    border-radius: 12px;
+}
+.bt1{
+    transition: all;
+    transition-duration: .5s;
+}
+.bt1:hover{
+    background-color: black !important;
+}
+
+/* ********************************
+            END
+******************************** */
+
+/* ********************************
+            HOME
+******************************** */
+
+#home-text>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-top: 50px;
+    color:rgba(0, 0, 0, 0.233);
+    background: linear-gradient(to right, rgba(0 , 0, 0,1)45%, rgba(255, 255, 255,1) 50%, rgba(0 , 0, 0,1) 55%, rgba(0,0,0,1) 100%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation:shine 5s infinite;
+}
+@keyframes shine{
+    0% { background-position: -100%;
+ }
+
+    100% { background-position: 100%; 
+}
+}
+
+#home-text>p{
+    display: block;
+    text-align: center;
+}
+#home-carousel{
+    display: block;
+    margin-top: 50px;
+    overflow: hidden;
+}
+#home-carousel>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-inner{
+    width:850px;
+    height: 400px;
+}
+.dropdown-divider{
+    border-top:1px solid #ccc;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+max-width: 20px;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown>a{
+    border: 1px solid rgba(128, 128, 128, 0.322) !important;
+    width: 300px;
+    margin-top: -8px;
+    height: 50px;
+    border-radius: 0 !important;
+    /* font-weight: 500; */
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    cursor: pointer;
+    background-color: #333;
+    top: 0;
+}
+.dropdown-item{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.dropdown-item:hover{
+    background-color: #212529;
+}
+.card{
+    position: relative;
+    height: 400px;
+    border-radius: 0% !important;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0 !important;
+    padding: 0;
+    background-color: #21252900;
+}
+.card img {
+    object-fit: cover;
+    padding: 0;
+    border-radius: none !important;
+    height: 100%;
+    width: 100%;
+    transition: all;
+    transition-duration: .5s;
+}
+.card-body {
+    position: absolute;
+    margin-top: 180px;
+    /* bottom: 0; */
+    left: 0;
+    width: 100%;
+    padding: 2px;
+    color: #fff;
+    text-align: center;
+    transition: all;
+    transition-duration: .5s;
+}
+/* .card:hover .card-body{
+    height: 180px;
+    background-color: rgba(151, 15, 117, 0.39);
+} */
+.card img:hover {
+    transform: scale(1.1);
+}
+
+/* ********************************
+            END
+******************************** */
+
+/* ********************************
+            PRODUCTS
+******************************** */
+
+
+
+.cardo{
+    position: relative;
+    height: 400px;
+    border-radius: 0%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 1px black;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cardo img {
+    object-fit: cover;
+    border-radius: none !important;
+    height: 100%;
+    width: 100%;
+    transition: all;
+    transition-duration: .5s;
+}
+.card-bodyy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px;
+    background-color: rgb(197, 49, 49);
+    color: #fff;
+    text-align: center;
+    height: 36px;
+    transition: all;
+    transition-duration: .5s;
+}
+.cardo:hover .card-bodyy{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.cardo img:hover {
+    transform: scale(1.1);
+}
+.card-bodyy>a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#hm{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#hms{
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.lead{
+    font-size: 12px;
+    font-weight: 500;
+}
+.lead2{
+    margin-top: -15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* ********************************
+            END
+******************************** */
+
+/* ********************************
+      ELDERS CATAGORIES CSS
+******************************** */
+
+.card1{
+    position: relative;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 0%;
+    box-shadow: 0px 0px 1px black;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card1 img{
+    position: absolute;
+    transition: all;
+    transition-duration: .5s;
+}
+.card1 img:hover{
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+.card-body1{
+    position: absolute;
+    height: auto;
+    margin-top: 180px;
+    /* bottom: 0; */
+    left: 0;
+    width: 100%;
+    padding: 2px;
+    color: #fff;
+    text-align: center;
+    transition: all;
+    transition-duration: .5s;
+}
+.card1>.card-body1>.card-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* ********************************
+            END
+******************************** */
+
+
+/* ********************************
+         MODAL CSS
+******************************** */
+.modal{
+    background-color: #2125296c;
+    backdrop-filter: blur(5px) !important;
+}
+
+.modal-body{
+    padding: auto;
+    background-color: #e9e9e9;
+}
+.modal-header{
+    background-color: rgb(255, 82, 82);
+    color: white;
+}
+.modal-footer{
+    background-color: rgb(252, 60, 60);
+}
+.modal-footer>.btn{
+    width: 200px;
+}
+ul b{
+    color: rgb(197, 49, 49);
+}
+ol b{
+    color: rgb(197, 49, 49);
+}
+ol li{
+    margin-bottom: 10px;
+}
+/* ********************************
+            END
+******************************** */
+
+/* ********************************
+            GALLERY ELDERS
+******************************** */
+.gall img{
+    position: relative;
+    width: 300px;
+}
+
+
+.cd{
+    height: 400px ;
+    overflow: hidden;
+    transition: all 0.5s ;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.cd:hover{
+    transform: scale(1.01);
+    filter: brightness(100%);
+}
+.cd>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px !important;
+    object-fit: cover;
+}
+
+
+
+/* ********************************
+            END
+******************************** */
+
+.nail-care-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+}
+
+.nail-care-section h3 {
+    margin-top: 0;
+    
+}
+
+.nail-care-section p {
+    margin: 1rem 0;
+    line-height: 1.8;
+    /* color: black; */
+    font-weight: 600;
+}
+
+.image-section {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.534);
+}
+
+#mpo{
+    display: none;
+}
+#bo{
+    display: none;
+}
+#f1{
+    display: block !important;
+}
+#f2{
+    display: none !important;
+}
+
+@media only screen and (max-width: 991px){
+    #home-text>h1{
+        font-size: 22px;
+    }
+    .carousel-inner{
+        width: 500px;
+        margin-top: 80px;
+        margin-bottom: -59px;
+        margin-left: 50px;
+    }
+    
+    .image-section>.row>.col-md-4>img{
+        height: 600px;
+
+    }
+    #il{
+        width: 100%;
+        margin: auto 0 auto;
+    
+        && .row{
+            width :900px
+        }
+
+    }
+
+    .dropdown-menu{
+        left: -50px ;
+    }
+
+    #mpo{
+        display: block !important;
+    }
+    #bo{
+        display: block !important;
+    }
+    .navbar-nav{
+        display: block !important;
+        margin: 0 !important;
+    }
+    .offcanvas{
+        background-color: transparent !important;
+        backdrop-filter: blur(0px) !important;
+    }
+    .offcanvas-body{
+        background-color: rgb(255, 255, 255) !important;
+        
+    }
+    .offcanvas-header{
+        background-color: rgb(255, 255, 255) !important;
+        color: rgb(61, 61, 61) !important;
+        font-weight: bolder;
+    }
+    .offcanvas-title{
+        font-size: 40px;
+        color: #535353;
+        margin-bottom: 10px;
+    }
+    .nav-link{
+        color: rgb(0, 0, 0) !important;
+        border-bottom: 1px solid #212529;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .offcanvas{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+    .offcanvas-header,
+    .offcanvas-body,
+    .offcanvas-footer{
+        padding: 20px;
+    }
+    .hb{
+        outline: none !important;
+        border: none !important;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    #home-text>h1{
+        font-size: 18px;
+    }
+    .carousel-inner{
+        display: none;
+    }
+    .dropdown-menu{
+        left: -100px;
+    }
+    #il{
+        display: none !important;
+    }
+    #f1{
+        display: none !important;
+    }
+    #f2{
+        display: block !important;
+    }
+     .cd {
+        height: auto !important;
+        margin: auto !important;
+        margin-bottom: 10px !important;
+    } 
+    #hero-sec{
+        display: none !important;
+    }
+    #mpo{
+        display: block !important;
+    }
+    #bo{
+        display: block !important;
+    }
+    .navbar-nav{
+        display: block !important;
+        margin: 0 !important;
+    }
+    .offcanvas-body{
+        background-color: rgb(255, 255, 255) !important;
+        
+    }
+    .offcanvas-header{
+        background-color: rgb(255, 255, 255) !important;
+        color: rgb(61, 61, 61) !important;
+        font-weight: bolder;
+    }
+    .offcanvas-title{
+        font-size: 40px;
+        color: #535353;
+        margin-bottom: 10px;
+    }
+    .nav-link{
+        color: rgb(0, 0, 0) !important;
+        border-bottom: 1px solid #212529;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .offcanvas{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        height: 650px;
+    }
+    .offcanvas-header,
+    .offcanvas-body,
+    .offcanvas-footer{
+        padding: 20px;
+    }
+    .hb{
+        outline: none !important;
+        border: none !important;
+    }
+}
+
